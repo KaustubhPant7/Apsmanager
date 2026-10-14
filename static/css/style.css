@@ -1,0 +1,54 @@
+/* static/css/style.css */
+:root {
+    --bg-main: #FDFBF7;
+    --bg-nav-footer: #F7F4EB;
+    --text-main: #2E3133;
+    --text-muted: #5C5A52;
+    --brand-green: #487357;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Custom Buttons */
+.btn-custom-dark {
+    background-color: var(--text-main);
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-custom-dark:hover {
+    background-color: #000;
+    color: white;
+}
+
+/* Key Animation */
+@keyframes pulse {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(5px); }
+}
+
+.key-animate {
+    animation: pulse 4s infinite ease-in-out;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 767.98px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+}
